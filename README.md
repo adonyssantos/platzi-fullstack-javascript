@@ -55,5 +55,54 @@ let age = 17;
 
 // Constante
 const independenceDay = "February 27th";
+```
 
+## Funciones
+
+Las funciones son bloques de código para realizar un proceso. Estas reciben un entrada, realizan un proceso y devuelven un salida. Existen 2 tipos de funciones:
+
+1. Declarativas
+2. De expresión
+
+Ambas pueden llevar parámetros, que son los datos que necesitan para ejecutarse. Cada parámetro va separado por una `coma (,)`. Cada instrucción que tenga la función debe terminar con `punto y coma (;)`.
+
+Las funciones declarativas tienen la siguiente sintaxis:
+
+```js
+function name(params) {
+  //code...
+}
+
+// EJEMPLO
+function sum(a, b) {
+  return a + b;
+}
+```
+
+Las funciones de expresión son aquellas que guardamos en una variable, por lo tanto, no es necesario nombrarlas y tienen la siguiente sintaxis:
+
+```js
+var name = function (params) {
+  //code..
+};
+
+// EJEMPLO
+var sum = function (a, b) {
+  return a + b;
+};
+```
+
+Para ejecutar las funciones debemos usar la siguiente sintaxis:
+
+```js
+name(params);
+
+//EJEMPLO
+sum(10 + 20); // Resultado 30
+```
+
+Si la función no tiene ningún parámetro, únicamente se escribe:
+
+```js
+name();
 ```
