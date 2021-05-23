@@ -106,3 +106,17 @@ Si la función no tiene ningún parámetro, únicamente se escribe:
 ```js
 name();
 ```
+
+En ES6 se implementó las funciones flechas:
+
+```js
+// Funciones flecha
+const name = () => {
+  //code..
+};
+
+const sum = (a, b) => {
+  //EJEMPLO
+  return a + b;
+};
+```
