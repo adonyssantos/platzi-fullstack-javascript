@@ -173,3 +173,5 @@ Debido a que como lo hemos dicho, la variable se tomo en cuenta y se le asigno m
 - La declaración de las variables se mueven arriba del scope, pero no la asignación. Antes de usar una variable, habrá que crearla y asignarla.
 
 En base al segundo punto, fue por eso que se cometio el error de usar la variable antes de inicializarla, pues sin problema el compilador le asigna memoria, pero no el valor hasta despues.
+
+Vídeo sobre **Hoisting**: [https://youtu.be/uI6o97A4IrI](https://youtu.be/uI6o97A4IrI)
