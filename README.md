@@ -150,3 +150,26 @@ console.log([scopeGlobal, scopeLocal]); //ReferenceError: scopeLocal is not defi
 ```
 
 Vídeo sobre **Scope**:[https://youtu.be/s-7C09ymzK8](https://youtu.be/s-7C09ymzK8)
+
+# Hoisting
+
+Es cuando las variables y funciones se ejecutan antes que cualquier tipo de código. En EC6 esto no sucede ya que tenemos `const` y `let` que hacen el trabajo de las variables y las funciones flechas.
+
+```js
+hello(myName); //Hello, undefined
+
+function hello(name) {
+  console.log(`Hello, ${name}`);
+}
+
+var myName = "Adonys";
+```
+
+Debido a que como lo hemos dicho, la variable se tomo en cuenta y se le asigno memoria, sin embargo, el compilador no la inicializo y se le dio el valor de undefined, y con ese valor se ingreso a la funcion, y ya despues de correr la funcion se le asigno el valor.
+
+**Este comportamiendo se puede entender facilmente si se comprenden estos dos puntos esenciales:**
+
+- Las funciones siempre se mueven arriba del scope. Por lo tanto, podemos elegir donde declararlas y usarlas.
+- La declaración de las variables se mueven arriba del scope, pero no la asignación. Antes de usar una variable, habrá que crearla y asignarla.
+
+En base al segundo punto, fue por eso que se cometio el error de usar la variable antes de inicializarla, pues sin problema el compilador le asigna memoria, pero no el valor hasta despues.
