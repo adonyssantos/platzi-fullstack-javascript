@@ -215,7 +215,7 @@ parseInt(“123hui”) //123
 Number(“123hui”) //NaN
 ```
 
-# Truthy y Falsy
+## Truthy y Falsy
 
 Articulo sobre esto: [www.sitepoint.com/javascript-truthy-falsy/](https://www.sitepoint.com/javascript-truthy-falsy/)
 
@@ -236,4 +236,47 @@ Boolean("a"); //true para cualquier caracter o espacio en blanco en el string
 Boolean([]); //true aunque el array esté vacío
 Boolean({}); //true aunque el objeto esté vacío
 Boolean(function () {}); //Cualquier función es verdadera también
+```
+
+## Operadores
+
+Un operador, es un elemento que indica el tipo de operación que se le va a aplicar a uno o más datos.
+
+- **Operadores de comparación** [developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Comparison_Operators](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Comparison_Operators)
+- **Operadores aritméticos** [developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Aritméticos](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Aritméticos)
+- **Operadores de asignación**
+  [developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Assignment_Operators](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Assignment_Operators)
+
+```js
+//Operadores binarios:
+3 + 2; //Suma
+50 - 10; // Resta
+10 * 20; //Multiplicación
+20 / 2; //División
+
+"Adonys " + "Santos"; //concatenación de strings
+
+//Operadores unitarios:
+!false; //negación de la negación = true
+
+//Operadores de asignación:
+var a = 1; //Asignamos un valor a la variable
+
+//Operadores para comparar:
+3 == "3"; //Compara los valores y devuelve "true" en este caso
+
+3 === "3"; //Compara y valida los tipos y valores. Devuelve "falso" en este caso
+
+5 < 3; //Compara y valida si el 5 es menor a 3
+5 > 3; //Compara y valida si el 5 es mayor a 3
+5 <= 6; //Compara y valida si el 5 es menor o igual al 6
+5 >= 6; //Compara y valida si el 5 es mayor o igual al 6
+
+a && b; //Valida si ambas variables son verdaderas para que se cumpla la condición
+a || b; //Aquí se cumple la condición si alguna de las dos variables es verdadera
+
+var edad = 17;
+edad++; //Incrementa el valor en 1
+
+edad += 2; //Incrementa el valor por 2
 ```
