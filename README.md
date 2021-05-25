@@ -126,3 +126,27 @@ const sum = (a, b) => {
   return a + b;
 };
 ```
+
+## Scope
+
+Es el alcance que tienen las variables. Además determina el conjunto de variables que podemos acceder desde una linea de código.
+
+```js
+var scopeGlobal = "Scope Goblal";
+
+function fun1() {
+  var scopeLocal = "Scope Local 1";
+  console.log([scopeGlobal, scopeLocal]); //[ 'Scope Goblal', 'Scope Local 1' ]
+}
+
+function fun2() {
+  var scopeLocal = "Scope Local 2";
+  console.log([scopeGlobal, scopeLocal]); //[ 'Scope Goblal', 'Scope Local 2' ]
+}
+
+fun1();
+fun2();
+console.log([scopeGlobal, scopeLocal]); //ReferenceError: scopeLocal is not defined
+```
+
+Vídeo sobre **Scope**:[https://youtu.be/s-7C09ymzK8](https://youtu.be/s-7C09ymzK8)
