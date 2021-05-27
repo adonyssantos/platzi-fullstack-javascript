@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Piedra, Papel o Tijera</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1 class="container text-center margin-bottom">Piedra, Papel o Tijera</h1>
+	<main class="grid small-col-1 med-col-1 col-2 container">
+		<section class="card margin-bottom">
+			<h2 class="margin-bottom">Escoge una opción</h2>
+			<div class="margin-bottom" id="opciones">
+				<button class="btn margin-bottom" id="piedra">Piedra</button>
+				<button class="btn margin-bottom" id="papel">Papel</button>
+				<button class="btn margin-bottom" id="tijera">Tijera</button>
+			</div>
+		</section>
+		<section class="card puntaje">
+			<h2 class="margin-bottom">Puntaje</h2>
+			<p id="puntosUser">Usuario: 0</p>
+			<p id="puntosMaquina">Maquina: 0</p>
+			<p class="margin-top" id="resultado"></p>
+		</section>
+	</main>
+	<script src="./index.js"></script>
+</body>
+
+</html>
