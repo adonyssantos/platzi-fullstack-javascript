@@ -27,27 +27,26 @@ const opncionMaquina = () => {
 
 // Algoritmo para determinar quien gana
 const juego = (user, maquina) => {
-  // Caso de empate
-  if (user === maquina) {
-    return `Ambos eligieron ${maquina}. Empate!!`;
-  }
+  switch (true) {
+    // Caso para que sea empate
+    case user === maquina:
+      return `Ambos eligieron ${maquina}. Empate!!`;
 
-  // Caso de que gane el usuario
-  else if (user === "piedra" && maquina === "tijera") {
-    return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana el usuario!!`;
-  } else if (user === "papel" && maquina === "piedra") {
-    return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana el usuario!!`;
-  } else if (user === "tijera" && maquina === "papel") {
-    return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana el usuario!!`;
-  }
+    // Caso que gane el usuario
+    case user === "piedra" && maquina === "tijera":
+      return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana el usuario!!`;
+    case user === "papel" && maquina === "piedra":
+      return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana el usuario!!`;
+    case user === "tijera" && maquina === "papel":
+      return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana el usuario!!`;
 
-  // Caso de que gane la maquina
-  else if (maquina === "piedra" && user === "tijera") {
-    return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana la maquina!!`;
-  } else if (maquina === "papel" && user === "piedra") {
-    return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana la maquina!!`;
-  } else if (maquina === "tijera" && user === "papel") {
-    return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana la maquina!!`;
+    // Caso de que gane la maquina
+    case maquina === "piedra" && user === "tijera":
+      return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana la maquina!!`;
+    case maquina === "papel" && user === "piedra":
+      return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana la maquina!!`;
+    case maquina === "tijera" && user === "papel":
+      return `El usuario elige ${user} y la maquina escoge ${maquina}. Gana la maquina!!`;
   }
 };
 
