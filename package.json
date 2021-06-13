@@ -1,0 +1,25 @@
+{
+  "name": "platzi-fullstack-javascript",
+  "version": "1.0.0",
+  "description": "## Introducción",
+  "main": "./src/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonyssantos/platzi-fullstack-javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "es6-javascript",
+    "platzi",
+    "nodejs"
+  ],
+  "author": "Adonys Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adonyssantos/platzi-fullstack-javascript/issues"
+  },
+  "homepage": "https://github.com/adonyssantos/platzi-fullstack-javascript#readme"
+}
