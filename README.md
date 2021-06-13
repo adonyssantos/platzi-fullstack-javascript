@@ -2,7 +2,7 @@
 
 ## Introducción
 
-**JavaScript** es un lenguaje de programación interpretado. Es utilizado en la web, además podemos utilizar frameworks crear Apps para Android, IOS y Desktop. Tambén podemos utilizar JS para el Backend.
+**JavaScript** es un lenguaje de programación interpretado. Es utilizado en la web, además podemos utilizar frameworks crear Apps para Android, IOS y Desktop. También podemos utilizar JS para el Backend.
 
 ## Tipos de datos
 
@@ -22,7 +22,7 @@ undefined; // Undefined
 } // Object
 ```
 
-![Ripos de datos en JavaScript](https://static.platzi.com/media/user_upload/CU01112E_1-f9d2b6fc-f60c-4bf4-a61d-6bf9df36b268.jpg)
+![Tipos de datos en JavaScript](https://static.platzi.com/media/user_upload/CU01112E_1-f9d2b6fc-f60c-4bf4-a61d-6bf9df36b268.jpg)
 
 **Devuelve el tipo de dato de un valor:**
 
@@ -132,7 +132,7 @@ const sum = (a, b) => {
 Es el alcance que tienen las variables. Además determina el conjunto de variables que podemos acceder desde una linea de código.
 
 ```js
-var scopeGlobal = "Scope Goblal";
+var scopeGlobal = "Scope Global";
 
 function fun1() {
   var scopeLocal = "Scope Local 1";
@@ -141,7 +141,7 @@ function fun1() {
 
 function fun2() {
   var scopeLocal = "Scope Local 2";
-  console.log([scopeGlobal, scopeLocal]); //[ 'Scope Goblal', 'Scope Local 2' ]
+  console.log([scopeGlobal, scopeLocal]); //[ 'Scope Global', 'Scope Local 2' ]
 }
 
 fun1();
@@ -165,14 +165,14 @@ function hello(name) {
 var myName = "Adonys";
 ```
 
-Debido a que como lo hemos dicho, la variable se tomo en cuenta y se le asigno memoria, sin embargo, el compilador no la inicializo y se le dio el valor de undefined, y con ese valor se ingreso a la funcion, y ya despues de correr la funcion se le asigno el valor.
+Debido a que como lo hemos dicho, la variable se tomo en cuenta y se le asigno memoria, sin embargo, el compilador no la inicializo y se le dio el valor de undefined, y con ese valor se ingreso a la función, y ya después de correr la función se le asigno el valor.
 
-**Este comportamiendo se puede entender facilmente si se comprenden estos dos puntos esenciales:**
+**Este comportamiento se puede entender fácilmente si se comprenden estos dos puntos esenciales:**
 
 - Las funciones siempre se mueven arriba del scope. Por lo tanto, podemos elegir donde declararlas y usarlas.
 - La declaración de las variables se mueven arriba del scope, pero no la asignación. Antes de usar una variable, habrá que crearla y asignarla.
 
-En base al segundo punto, fue por eso que se cometio el error de usar la variable antes de inicializarla, pues sin problema el compilador le asigna memoria, pero no el valor hasta despues.
+En base al segundo punto, fue por eso que se cometió el error de usar la variable antes de inicializarla, pues sin problema el compilador le asigna memoria, pero no el valor hasta después.
 
 Vídeo sobre **Hoisting**: [https://youtu.be/uI6o97A4IrI](https://youtu.be/uI6o97A4IrI)
 
@@ -208,7 +208,7 @@ console.log(d);
 parseInt(“123hui”) //123
 ```
 
-**Number:** Busca convertir toda la cadena en un número, por lo que al encontrarse con un elemento que no sea diginto nos dara como resultado NAN.
+**Number:** Busca convertir toda la cadena en un número, por lo que al encontrarse con un elemento que no sea dígito nos dará como resultado NAN.
 
 ```js
 // Ejemplo
@@ -232,7 +232,7 @@ Boolean(""); //false
 
 //Ejemplos en los que Boolean devuelve verdadero:
 Boolean(1); //true para 1 o cualquier número diferente de cero (0)
-Boolean("a"); //true para cualquier caracter o espacio en blanco en el string
+Boolean("a"); //true para cualquier carácter o espacio en blanco en el string
 Boolean([]); //true aunque el array esté vacío
 Boolean({}); //true aunque el objeto esté vacío
 Boolean(function () {}); //Cualquier función es verdadera también
