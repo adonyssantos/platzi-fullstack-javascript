@@ -58,7 +58,9 @@ mensaje.then((msg) => console.log(msg)).catch(() => console.log("error"));
 
 // El método Fetch nos permite hacer una petición a un API y es justamente un callback. Por lo que tenemos que recibirlo usando `then` y `catch` de la siguiente forma.
 
-let pokemones = fetch("https://pokeapi.co/api/v2/pokemon/1"); // Esto devuelve una promesa
+let pokemones = fetch("https://pokeapi.co/api/v2/pokemon/1");
+// Esto devuelve una promesa
+// Debemos requerir fetch para utilizarlo
 
 pokemones
   .then((response) => response.json())
