@@ -22,3 +22,22 @@ isOlder(19)
 isOlder("40")
   .then((response) => console.log(response))
   .catch((error) => console.error(error)); // reject: "You must enter a number as a value."
+
+const sayHello = (name) => {
+  return new Promise((resolve, reject) => {
+    if (name) {
+      resolve(`Hello ${name}`);
+    } else {
+      const error = new Error("You must add the name as a parameter.");
+      reject(error);
+    }
+  });
+};
+
+sayHello("Adonys")
+  .then((response) => console.log(response))
+  .catch((error) => console.error(error));
+
+sayHello()
+  .then((response) => console.log(response))
+  .catch((error) => console.error(error));
