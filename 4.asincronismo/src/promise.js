@@ -41,3 +41,7 @@ sayHello("Adonys")
 sayHello()
   .then((response) => console.log(response))
   .catch((error) => console.error(error));
+
+Promise.all([sayHello("Adonys"), isOlder(17)])
+  .then((response) => console.log(`Results array: ${response}`))
+  .catch((error) => console.error(error));
