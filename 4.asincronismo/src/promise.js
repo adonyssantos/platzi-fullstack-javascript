@@ -4,7 +4,9 @@ const isOlder = (age) => {
       const LEGAL_AGE = 18;
       age >= LEGAL_AGE ? resolve("You're of age!") : resolve("You're a minor!");
     } else {
-      reject("You must enter a number as a value.");
+      // reject("You must enter a number as a value.")
+      const error = new Error("You must enter a number as a value.");
+      reject(error);
     }
   });
 };
